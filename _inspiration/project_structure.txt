@@ -1,0 +1,158 @@
+
+------------------------------- Project Structure -------------------------------
+
+Case 1 : 
+------
+
+project-root/
+|
+|-- index.html
+|
+|-- css/
+|   |-- style.css
+|
+|-- js/
+|   |-- script.js
+|
+|-- images/
+|   |-- (place your images here)
+|
+|-- books/
+|   |-- book1.html
+|   |-- book2.html
+|   |-- ... (one file for each book)
+|
+|-- subjects/
+|   |-- c.html
+|   |-- cpp.html
+|   |-- java.html
+|   |-- adv_java.html
+|   |-- python.html
+|   |-- dsa.html
+|   |-- dbms.html
+|
+|-- locations/                  
+|   |-- cidco.html
+|   |-- osmanpura.html
+|
+|-- blog/
+|   |-- (place your blog posts here)
+|
+|-- portfolio/
+|   |-- (place any additional works or projects here)
+
+
+
+Case 2 : 
+------
+
+project-root/
+|
+|-- index.html
+|
+|-- css/
+|   |-- style.css
+|
+|-- js/
+|   |-- script.js
+|
+|-- images/
+|   |-- (place your images here)
+|
+|-- books/
+|   |
+|   |-- book1/
+|   |   |-- index.html
+|   |   |-- cover.jpg
+|   |   |-- synopsis.txt
+|   |
+|   |-- book2/
+|   |   |-- index.html
+|   |   |-- cover.jpg
+|   |   |-- synopsis.txt
+|   |-- ...
+|
+|-- subjects/
+|   |-- c/
+|   |   |-- index.html
+|   |   |-- curriculum.txt
+|   |   |-- resources/
+|   |   |   |-- (place teaching resources here)
+|   |
+|   |-- cpp/
+|   |   |-- index.html
+|   |   |-- curriculum.txt
+|   |   |-- resources/
+|   |   |   |-- (place teaching resources here)
+|   |
+|   |-- java/
+|   |   |-- index.html
+|   |   |-- curriculum.txt
+|   |   |-- resources/
+|   |   |   |-- (place teaching resources here)
+|   |
+|   |-- adv_java/
+|   |   |-- index.html
+|   |   |-- curriculum.txt
+|   |   |-- resources/
+|   |   |   |-- (place teaching resources here)
+|   |
+|   |-- python/
+|   |   |-- index.html
+|   |   |-- curriculum.txt
+|   |   |-- resources/
+|   |   |   |-- (place teaching resources here)
+|   |
+|   |-- dsa/
+|   |   |-- index.html
+|   |   |-- curriculum.txt
+|   |   |-- resources/
+|   |   |   |-- (place teaching resources here)
+|   |
+|   |-- dbms/
+|   |   |-- index.html
+|   |   |-- curriculum.txt
+|   |   |-- resources/
+|   |   |   |-- (place teaching resources here)
+|
+|-- locations/
+|
+|   |-- cidco/
+|   |   |-- index.html
+|   |   |-- address.txt
+|   |   |-- google_maps.html
+|   |
+|   |-- osmanpura/
+|   |   |-- index.html
+|   |   |-- address.txt
+|   |   |-- google_maps.html
+|   |
+|
+|-- contact.html
+|
+|-- testimonials.html
+|
+|-- programming_journey.html
+|
+|-- query_form.html
+|
+|-- blog/
+|   |-- post1/
+|   |   |-- index.html
+|   |   |-- cover.jpg (Optional: cover image for the blog post)
+|   |-- post2/
+|   |   |-- index.html
+|   |   |-- cover.jpg (Optional: cover image for the blog post)
+|   |-- ...
+|
+|-- portfolio/
+|   |-- project1/
+|   |   |-- index.html
+|   |   |-- (place project files here)
+|   |-- project2/
+|   |   |-- index.html
+|   |   |-- (place project files here)
+|   |-- ...
+
+
+

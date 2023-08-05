@@ -1,0 +1,66 @@
+------------------------------- Website Plans And Features -------------------------------
+
+Homepage:
+--------
+A brief introduction about Ravi Sir and his teaching philosophy.
+Eye-catching design and a professional profile picture.
+
+
+About Me:
+--------
+A more detailed biography, highlighting Ravi Sir's teaching experience, qualifications, and accomplishments.
+Mention Ravi Sir's passion for writing and the number of books Ravi Sir has authored.
+
+
+Books:
+--------
+Create a dedicated section to showcase the 22 books Ravi Sir has written.
+Provide a brief synopsis of each book and include their cover images and online 
+channels such as amazon to buy them from.
+
+
+Teaching:
+--------
+Separate sub-sections for each programming language Ravi Sir teach (C, C++, Java, Advanced Java, Python).
+Include a short description of Ravi Sir's teaching approach for each language.
+Optionally, provide links to any course material or resources Ravi Sir has created.
+
+
+Class Locations:
+----------------
+Embed Google Maps on Ravi Sir's website to showcase the locations of the two class venues (Cidco & Osmanpura).
+Provide the address and any additional information students might need.
+
+
+Contact:
+-------
+Include Ravi Sir's contact information, such as email address or a contact form, to allow potential 
+students to get in touch with Ravi Sir.
+
+
+Testimonials/Reviews:
+--------------------
+If possible, collect testimonials from Ravi Sir's previous students display them on a separate page/cards.
+
+
+Programming Journey(Compalsary):
+-------------------------------
+A Roadmap showing the path suggested by Ravi Sir, to learn programming laguages, DSA and DBMS
+
+
+Query Form (Compalsary):
+-----------------------
+A simple form for students to enter their Name, College, And Subjects and shift (morning/evening)
+they are interested into, so that Ravi Sir can contact them later.
+
+
+Blog (Optional):
+---------------
+Consider adding a blog section where Ravi Sir can share teaching tips, programming-related articles, 
+or updates on Ravi Sir's latest projects/life-events, etc.
+
+
+Portfolio Gallery:
+-----------------
+To showcase any additional works, projects, or achievements that demonstrate Ravi Sir expertise 
+and passion for teaching. Put this in About me section.
