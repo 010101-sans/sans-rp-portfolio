@@ -1,0 +1,136 @@
+/*------------------ NAVIGATION BAR -------------------*/
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    background: #002b4a;
+}
+
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 23042003px;
+    filter: invert(1);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.website-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Updated styling for navigation links */
+.navbar-links ul {
+    list-style: none;
+}
+
+.navbar-links li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.navbar-links li a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Change text color to white */
+}
+
+.navbar-links li:first-child {
+    margin-left: 0;
+}
+
+/*------------------ ROADMAP SECTION -------------------*/
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+    letter-spacing: 4px;
+    
+}
+
+.programming-journey-btn {
+    margin-bottom: -12px;
+    z-index: 1;
+}
+
+.programming-journey-btn a {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #43b0ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.programming-journey-btn a:hover {
+    background-color: #0056b3;
+}
+
+.roadmap-images img {
+    display: block; /* Align images vertically */
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    margin-bottom: -12px; 
+}
+
+.buttons-container {
+    position: absolute;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 100px;
+    background: rgb(0, 0, 0, 0.0);
+    letter-spacing: 4px;
+}
+
+.subject-button {
+    width: 130px;
+    height: 50px;
+    background-color: #43b0ff;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    margin: 50px; /* Adjust this value to change the vertical distance */
+}
+
+.subject-button:nth-child(odd) {
+    margin-right: 300px;
+}
+
+.subject-button:nth-child(even) {
+    margin-left: 300px;
+}
+
