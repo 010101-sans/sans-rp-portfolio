@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -85,9 +86,9 @@
             <img id="python-logo" src="images/languages/python-logo.svg" alt="Language 4">
         </div>
         <div class="additional-languages-container"></div>
-            <img id="adv-logo" src="images/languages/adv-java-logo.svg" alt="Language 5">
-            <img id="dsa-logo" src="images/languages/dsa-logo.svg" alt="Language 6">
-            <img id="dbms-logo" src="images/languages/dbms-logo.svg" alt="Language 7">
+        <img id="adv-logo" src="images/languages/adv-java-logo.svg" alt="Language 5">
+        <img id="dsa-logo" src="images/languages/dsa-logo.svg" alt="Language 6">
+        <img id="dbms-logo" src="images/languages/dbms-logo.svg" alt="Language 7">
         </div>
     </section>
 
@@ -120,49 +121,62 @@
 
     <!-- TODO -->
     <!-------------- Footer Section ----------------->
-    <!--
     <footer class="footer-section">
-        <div class="footer-left-column">
-            <ul class="social-media-list">
-                <li><a href="https://twitter.com/your_twitter_profile" target="_blank"><img src="images/socials/twitter-logo.svg" alt="Twitter">Twitter</a></li>
-                <li><a href="https://instagram.com/your_instagram_profile" target="_blank"><img src="images/socials/instagram-logo.svg" alt="Instagram">Instagram</a></li>
-                <li><a href="mailto:contactsanskarcs@gmail.com"><img src="images/socials/email-logo.svg" alt="Email"></a>Email</li>
-                <li><a href="tel:+1234567890"><img src="images/socials/phone-logo.svg" alt="Phone">Phone Number</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-right-column">   
-            <div class="footer-left-subcolumn">
-                <h3>Contact Information</h3>
-                <input type="text" placeholder="Student Name" required>
-                <input type="text" placeholder="Student College" required>
-                <input type="text" placeholder="Student Phone Number" required>
-
-                <select multiple>
-                    <option value="C">C</option>
-                    <option value="CPP">C++</option>
-                    <option value="Java">Java</option>
-                    <option value="Python">Python</option>
-                    <option value="DSA">DSA</option>
-                    <option value="DBMS">DBMS</option>
-                    <option value="AdvJava">Adv. Java</option>
-                </select>
-
-                <select>
-                    <option value="OsmanpuraMorning">Osmanpura | Morning</option>
-                    <option value="CidcoEvening">Cidco | Evening</option>
-                </select>
+        <!-- Left Column -->
+        <div class="footer-left">
+            <div class="social-media">
+                <a href="https://twitter.com/your_twitter_handle"><img src="images/socials/twitter-logo.svg"
+                        alt="Twitter Logo"></a>
+                <p>Twitter</p>
             </div>
-
-            <div class="footer-right-subcolumn">
-                <h3>Message (Optional)</h3>
-                <textarea placeholder="Write your message here"></textarea>
-                <button type="submit" onclick="submitForm()">Submit</button>
+            <div class="social-media">
+                <a href="https://instagram.com/your_instagram_handle"><img src="images/socials/insta-logo.webp"
+                        alt="Instagram Logo"></a>
+                <p>Instagram</p>
+            </div>
+            <div class="social-media">
+                <a href="mailto:your@email.com"><img src="images/socials/email-logo.svg" alt="Email Logo"></a>
+                <p>Email</p>
+            </div>
+            <div class="social-media">
+                <a href="tel:+1234567890"><img src="images/socials/phone-logo.svg" alt="Phone Logo"></a>
+                <p>Phone</p>
             </div>
         </div>
-    </footer> -->
 
-    <!-- Rest of your website content goes here -->
+         <!-- Middle Column (Slideshow) -->
+        <div class="footer-middle">
+            <div class="slideshow">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 1">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 2">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 3">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 4">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 5">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 6">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 7">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 8">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 9">
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 10">
+                <!-- Duplicate the first image and place it at the end -->
+                <img src="images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 1">
+            </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="footer-right">
+            <h2 class="get-in-touch">Get In Touch</h2>
+            <!-- Left Sub-Column -->
+            <div class="footer-subcolumn">
+                <input id="nameInput" type="text" placeholder="Your Name">
+                <input id="collegeInput" type="text" placeholder="Your College">
+                <input id="phoneInput" type="text" placeholder="Your Phone Number">
+                <input id="subjectsInput" type="text" placeholder="Your Subjects">
+                <input id="messageInput" type="text" placeholder="Message (Optional)">
+                <button id="submitButton" class="submit-button" onclick="sendEmail()">Submit Your Query</button>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="js/index.js"></script>
 
