@@ -94,7 +94,7 @@ body, h1, h2, h3, p, ul, li {
     background-color: #0056b3;
 }
 
-.roadmap-images img {
+.roadmap-connector img {
     display: block; /* Align images vertically */
     width: 150px;
     height: 150px;
@@ -126,11 +126,49 @@ body, h1, h2, h3, p, ul, li {
     margin: 50px; /* Adjust this value to change the vertical distance */
 }
 
-.subject-button:nth-child(odd) {
-    margin-right: 300px;
+.subject-button:nth-child(odd) { margin-right: 300px; }
+
+.subject-button:nth-child(even) { margin-left: 300px; }
+
+/* --------------------- Syllabus Details ----------------------- */
+.subject-button {
+    transition: width 0.3s ease;
 }
 
-.subject-button:nth-child(even) {
-    margin-left: 300px;
+.subject-button:hover {
+    width: 180px; /* Adjust this value to control the width on hover */
 }
 
+// ----------------------------------
+.chapter-cards-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.chapter-card {
+    background-color: #43b0ff;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.connecting-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.connecting-line line {
+    stroke: #43b0ff;
+    stroke-width: 2;
+}
+
+// ----------------------------------

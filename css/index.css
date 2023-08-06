@@ -484,7 +484,7 @@ iframe {
     justify-content: space-between;
     flex-grow: 1;
     margin-right: 50px;
-/* ------------------------------------ } ----------------------------------- */
+} 
 
 .footer-subcolumn {
     display: flex;
