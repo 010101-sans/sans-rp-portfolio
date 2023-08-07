@@ -14,33 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <style>
-
-        html {
-            background-color: #5f45bb;
-            background-image: linear-gradient(to bottom right, #180cac, #d054e4);
-            font-size: 16px;
-            min-height: 100vh;
-            text-shadow: 0 3px 5px rgba(0,0,0,0.1);
-            position: relative;
-        }
-
-        .wallpaper {
-            display: block;
-            height: 100%;
-            left: 0;
-            top: 0;
-            width: 100%;
-            background-image: url("/images/site-bg.png");
-            background-position: center;
-            background-size: cover;
-            opacity: 0.2;
-            position: fixed;
-            z-index: -1;
-        }
-
-    </style>
-        
 </head>
 
 <body>
@@ -57,7 +30,7 @@
                 <ul>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -308,7 +281,7 @@
 
     <!-------------- Location Section ----------------->
     <section class="location-section">
-        <h2 class="location-section-title">Locations</h2>
+        <h2 class="location-section-title">Class Locations</h2>
         <div class="location-container">
             <!-- Ravi Programming Osmanpura sub-section -->
             <div class="location-subsection">
@@ -376,7 +349,6 @@
         </div>
 
 
-        <!-- TODO -->
         <!-- Right Column -->
         <div class="footer-right">
             <!-- Left Sub-Column -->
@@ -384,7 +356,7 @@
                 <input id="nameInput" type="text" placeholder="Your Name">
                 <input id="collegeInput" type="text" placeholder="Your College">
                 <input id="phoneInput" type="tel" placeholder="Your Phone Number">
-        
+                
                 <!-- Subjects Check-list Buttons -->
                 <div class="subjects-checkbox">
                     <label><input type="checkbox" name="subject" value="C">C</label>
@@ -395,14 +367,15 @@
                     <label><input type="checkbox" name="subject" value="Adv. Java">Adv. Java</label>
                     <label><input type="checkbox" name="subject" value="DBMS">DBMS</label>
                 </div>
-        
+                
                 <!-- Locations Check-list Buttons -->
                 <div class="locations-checkbox">
                     <label><input type="checkbox" name="location" value="Osmanpura">Osmanpura | Morning</label>
                     <label><input type="checkbox" name="location" value="Cidco">Cidco | Evening</label>
                 </div>
-        
+                
                 <input id="messageInput" type="text" placeholder="Message (Optional)">
+                <!-- TODO -->
                 <button id="submitButton" class="submit-button" onclick="submitForm()">Submit Your Query</button>
             </div>
         </div>

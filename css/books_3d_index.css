@@ -1,3 +1,4 @@
+/* 3d Book Flipping Styles adapted from CodePen.io (Author: Nam Kyung) : https://codepen.io/Alcion/pen/OaNYvp*/
 
 *:after,
 *:before {
@@ -488,7 +489,7 @@ a {
     /* Enable horizontal scrolling */
     overflow-x: auto;
     overflow-y: hidden;
-    padding-top: 30px;
+    padding-top:30px;
 }
 
 

@@ -1,3 +1,19 @@
+/* -------------- Clicking Contact ---------------- */
+
+// Get the "Contact" button element
+const contactButton = document.querySelector('a[href="#footer"]');
+
+// Add a click event listener to the "Contact" button
+contactButton.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    // Get the target element (the footer)
+    const footer = document.getElementById('footer');
+
+    // Scroll to the footer with smooth behavior
+    footer.scrollIntoView({ behavior: 'smooth' });
+}); 
+
 /* ------------- Book Images Horizontal Scroll ------------- */
 
 // Get the books container and initial mouse position
@@ -101,3 +117,5 @@ function updateSlide() {
 }
 
 startSlideshow();
+
+/* --------------------------- Loading Animation ------------------------ */

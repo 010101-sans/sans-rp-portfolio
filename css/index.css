@@ -1,9 +1,33 @@
+/* Glass Styles adapted from CodePen.io (Author: ABHAY) : https://codepen.io/its_abhay/pen/WNYZmJb */
+
 /*------------------ NAVIGATION BAR -------------------*/
 
 * { font-family: 'Quicksand', sans-serif; }
 
 /* Apply gradient effect */
 
+html {
+    background-color: #5f45bb;
+    background-image: linear-gradient(to bottom right, #180cac, #d054e4);
+    font-size: 16px;
+    min-height: 100vh;
+    text-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.wallpaper {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: url("/images/site-bg.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    position: fixed;
+    z-index: -1;
+}
 
 
 /* Reset some default styles for consistency */
@@ -224,9 +248,6 @@ li {
     background-color: #f7f7f7;
     /* Adjust the background color as needed */
     text-align: center;
-    background-color: rgba(0, 0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.4);
 
     margin: 15px;
     margin-top: 100px; 
@@ -305,15 +326,17 @@ li {
 
 .additional-languages-container img {
     width: 100px;
+    /* Adjust the size of the additional language images */
     height: 100px;
+    /* Adjust the size of the additional language images */
     margin: 0 18px;
+    /* Add some spacing between the additional language images */
     border-radius: 5px;
     transition: transform 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    
-    /* Add black shadow */
     filter: invert(1);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
 }
+
 
 /* Add scaling effect and shadow to the lower three images when hovered */
 #adv-logo:hover,
@@ -322,7 +345,7 @@ li {
     transition: transform 0.3s ease;
     transform: scale(1.1);
     /* Apply scaling effect on hover */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
     /* Add a nice shadow effect */
 
 }
@@ -363,7 +386,6 @@ li {
     width: 100px;
     height: 100px;
     /* filter: invert(1);   */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 #dsa-logo {
     margin-right: 15px;
@@ -373,7 +395,6 @@ li {
     width: 85px;
     height: 85px;
     /* filter: invert(1);   */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 #dbms-logo {
     margin-right: 15px;
@@ -383,7 +404,6 @@ li {
     width: 80px;
     height: 80px;
     /* filter: invert(1);   */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* ------------------- Location Section Styles ------------------- */
@@ -671,6 +691,7 @@ iframe {
     font-weight: bold;
 }
 
+
 /* ------------------- copy right section ----------------- */
 
 .copyright-box {
@@ -691,7 +712,7 @@ iframe {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
 }
 
-.copyrihgt-box .content {
+.copyright-box .content {
     margin: 10px 20px;
     font-size: 0.9em;
 }
