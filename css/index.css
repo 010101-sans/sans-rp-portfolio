@@ -24,7 +24,7 @@ li {
     justify-content: space-between;
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 12px;
 }
 
 .navbar-logo img {
@@ -37,6 +37,7 @@ li {
 .navbar-logo {
     display: flex;
     align-items: center;
+    margin-right: auto; /* Align the navbar-logo to the left */
 }
 
 .website-title {
@@ -48,13 +49,17 @@ li {
 /* Updated styling for navigation links */
 .navbar-links ul {
     list-style: none;
+    /* Add the following CSS to align the links to the right */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-links li {
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
-
 }
 
 .navbar-links li a {
@@ -68,6 +73,15 @@ li {
     margin-left: 0;
 }
 
+/* Add the following CSS to align the navbar-logo and navbar-links */
+.navbar-logo {
+    order: 1;
+}
+
+.navbar-links {
+    order: 2;
+}
+
 /*------------------- Profile Section Styles -------------------*/
 
 .profile-section {
@@ -76,7 +90,7 @@ li {
     align-items: center;
     flex-direction: column;
     /* Added to stack items vertically */
-    height: 50vh;
+    height: 45vh;
     /* Adjust the height as per your requirement */
     background-color: white;
     /* Background color for the profile section */
@@ -124,17 +138,15 @@ li {
 /* ------------------- Books Section Styles ------------------- */
 
 .books-section {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f7f7f7;
-    /* Adjust the background color as needed */
+    background-color: #ecf0f1;
     text-align: center;
+    margin-top: 30px;
 }
 
 .books-section-title {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: -20px;
+    margin-top: 0px;
     color: white;
     /* Text color (black) */
     background-color: rgb(31, 31, 31);
@@ -159,68 +171,18 @@ li {
     background-color: white;
 }
 
-.books-container {
-    display: flex;
-    overflow-x: auto;
-    /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch;
-    /* Enable smooth scrolling on iOS */
-    justify-content: flex-start;
-    /* Align images to the left */
-    align-items: center;
-    padding: 20px 0;
-    /* Add padding to the left to make the first image fully visible */
-    padding-left: 10px;
-}
-
-.books-container img {
-    width: 150px;
-    height: 200px;
-    margin: 0 18px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    transform-style: preserve-3d;
-    transition: transform 0.3s ease;
-    position: relative;
-}
-
-.books-container img::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 150px;
-    background-color: #ccc; /* Page color */
-    transform: translateZ(-10px); /* Adjust the thickness of the book */
-    transition: transform 0.3s ease;
-    z-index: -1;
-    border-radius: 5px;
-    opacity: 0.7; /* Adjust the transparency of the thickness element */
-}
-
-.books-container img:hover {
-    transform: rotateY(30deg) rotateX(-15deg);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8);
-    z-index: 1;
-}
-
-.books-container img:hover::before {
-    transform: translateZ(-30px); /* Adjust the thickness of the book on hover */
-}
-
 
 /* Hide the horizontal scrollbar */
-.books-container::-webkit-scrollbar {
-    display: none;
+.component::-webkit-scrollbar { 
+    display: none; 
+    margin-right: 100px;
+
 }
 
 /* Make the images draggable with the mouse */
-.books-container {
+.align {
     -ms-overflow-style: none;
-    /* Hide scrollbar on IE and Edge */
     scrollbar-width: none;
-    /* Hide scrollbar on Firefox */
 }
 
 
@@ -466,9 +428,9 @@ iframe {
 .footer-left {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    padding-top: 130px;
-    margin-left: 0px;
+    /* Update padding and margin to create space around the footer-left content */
+    padding: 10px;
+    margin-right: 20px;
 }
 
 .social-media {
@@ -477,7 +439,7 @@ iframe {
     margin-bottom: 15px;
     transition: transform 0.3s ease;
     border-radius: 16px;
-
+    margin-left: 50px;
 }
 
 .social-media img {
@@ -507,14 +469,13 @@ iframe {
 .get-in-touch {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: -830px;
+    margin-bottom: 30px;
     color: white;
     background-color: rgb(169, 169, 169);
-    padding: 12px 10px;
+    padding: 12px 40px;
     border-radius: 50px;
     height: 30px;
-    width: 180px;
+    width: fit-content; /* Use fit-content to adjust the button width based on content */
     padding-left: 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     transition: background-color 0.3s ease;
@@ -531,16 +492,18 @@ iframe {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    /* Hide the overflowing images */
     width: 550px;
-    margin-left: 60px;
-    border-radius: 23px;
+    /* If you want to center the content on the middle column, you can use the following CSS: */
+    margin: 0 auto;
+    border-radius: 20px;
+
 }
 
 .slideshow {
     display: flex;
-    /* Display images side by side */
     animation: slideAnimation 60s linear infinite;
+    /* Center the content within the footer-middle column */
+    justify-content: center;
 }
 
 @keyframes slideAnimation {
@@ -571,9 +534,10 @@ iframe {
 
 .footer-right {
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    margin-right: 50px;
+    flex-direction: column;
+    /* Update padding and margin to create space around the footer-right content */
+    padding: 10px;
+    margin-left: 20px;
 }
 
 .footer-subcolumn {
