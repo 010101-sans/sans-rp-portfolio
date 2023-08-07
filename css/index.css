@@ -5,9 +5,6 @@
 }
 
 /* Reset some default styles for consistency */
-<<<<<<< HEAD
-body, h1, h2, h3, p, ul, li {
-=======
 body,
 h1,
 h2,
@@ -15,7 +12,6 @@ h3,
 p,
 ul,
 li {
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     margin: 0;
     padding: 0;
 }
@@ -62,15 +58,10 @@ li {
 }
 
 .navbar-links li a {
-<<<<<<< HEAD
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* Change text color to white */
-=======
     text-decoration: none;
     /* Remove underline */
     color: #fff;
     /* Change text color to white */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 .navbar-links li:first-child {
@@ -83,41 +74,24 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-    flex-direction: column; /* Added to stack items vertically */
-    height: 50vh; /* Adjust the height as per your requirement */
-    background-color: white; /* Background color for the profile section */
-=======
     flex-direction: column;
     /* Added to stack items vertically */
     height: 50vh;
     /* Adjust the height as per your requirement */
     background-color: white;
     /* Background color for the profile section */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 
 }
 
 .profile-content {
     display: flex;
-<<<<<<< HEAD
-    flex-direction: column; /* Stacking items vertically */
-=======
     flex-direction: column;
     /* Stacking items vertically */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     align-items: center;
     text-align: center;
 }
 
 .profile-content img {
-<<<<<<< HEAD
-    width: 200px; /* Adjust the size as per your profile picture */
-    height: 200px; /* Adjust the size as per your profile picture */
-    border-radius: 26042003px;
-    margin-bottom: 10px; /* Add space between the picture and the name */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
-=======
     width: 200px;
     /* Adjust the size as per your profile picture */
     height: 200px;
@@ -127,7 +101,6 @@ li {
     /* Add space between the picture and the name */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Add shadow effect */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 .profile-details h2 {
@@ -137,22 +110,14 @@ li {
 }
 
 .profile-occupations {
-<<<<<<< HEAD
-    display: flex; /* Display occupations side by side */
-=======
     display: flex;
     /* Display occupations side by side */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 .profile-occupations p {
     font-size: 1.2rem;
-<<<<<<< HEAD
-    margin-right: 10px; /* Add space between "Teacher" and "Programmer" */
-=======
     margin-right: 10px;
     /* Add space between "Teacher" and "Programmer" */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 
@@ -161,12 +126,8 @@ li {
 .books-section {
     margin-top: 20px;
     padding: 20px;
-<<<<<<< HEAD
-    background-color: #f7f7f7; /* Adjust the background color as needed */
-=======
     background-color: #f7f7f7;
     /* Adjust the background color as needed */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     text-align: center;
 }
 
@@ -174,13 +135,6 @@ li {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: -20px;
-<<<<<<< HEAD
-    color: white; /* Text color (black) */
-    background-color: rgb(31, 31, 31); /* Button color (adjust as desired) */
-    padding: 12px 10px; /* Add padding around the text */
-    border-radius: 23042003px; /* Rounded corners for the button appearance */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-=======
     color: white;
     /* Text color (black) */
     background-color: rgb(31, 31, 31);
@@ -191,43 +145,28 @@ li {
     /* Rounded corners for the button appearance */
     transition: background-color 0.3s ease;
     /* Smooth transition on hover */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     width: 300px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-<<<<<<< HEAD
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); /* Add a nice shadow effect */
-}
-
-.books-section-title:hover {
-    color: black; 
-=======
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     /* Add a nice shadow effect */
 }
 
 .books-section-title:hover {
     color: black;
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     background-color: white;
 }
 
 .books-container {
     display: flex;
-<<<<<<< HEAD
-    overflow-x: auto; /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-    justify-content: flex-start; /* Align images to the left */
-=======
     overflow-x: auto;
     /* Enable horizontal scrolling */
     -webkit-overflow-scrolling: touch;
     /* Enable smooth scrolling on iOS */
     justify-content: flex-start;
     /* Align images to the left */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     align-items: center;
     padding: 20px 0;
     /* Add padding to the left to make the first image fully visible */
@@ -235,20 +174,6 @@ li {
 }
 
 .books-container img {
-<<<<<<< HEAD
-    width: 150px; /* Adjust the size of the book images */
-    height: 200px; /* Adjust the size of the book images */
-    margin: 0 18px; /* Add some spacing between the book images */
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Add a nice shadow effect */
-    transition: transform 0.3s ease;
-}
-
-.books-container img:hover {
-    transform: scale(1.1);
-}
-
-=======
     width: 150px;
     height: 200px;
     margin: 0 18px;
@@ -285,7 +210,6 @@ li {
 }
 
 
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 /* Hide the horizontal scrollbar */
 .books-container::-webkit-scrollbar {
     display: none;
@@ -293,15 +217,10 @@ li {
 
 /* Make the images draggable with the mouse */
 .books-container {
-<<<<<<< HEAD
-    -ms-overflow-style: none; /* Hide scrollbar on IE and Edge */
-    scrollbar-width: none; /* Hide scrollbar on Firefox */
-=======
     -ms-overflow-style: none;
     /* Hide scrollbar on IE and Edge */
     scrollbar-width: none;
     /* Hide scrollbar on Firefox */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 
@@ -310,12 +229,8 @@ li {
 .languages-section {
     margin-top: 100px;
     padding: 20px;
-<<<<<<< HEAD
-    background-color: #f7f7f7; /* Adjust the background color as needed */
-=======
     background-color: #f7f7f7;
     /* Adjust the background color as needed */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     text-align: center;
 }
 
@@ -323,13 +238,6 @@ li {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: -20px;
-<<<<<<< HEAD
-    color: white; /* Text color (black) */
-    background-color: rgb(31, 31, 31); /* Button color (adjust as desired) */
-    padding: 12px 10px; /* Add padding around the text */
-    border-radius: 23042003px; /* Rounded corners for the button appearance */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-=======
     color: white;
     /* Text color (black) */
     background-color: rgb(31, 31, 31);
@@ -340,49 +248,29 @@ li {
     /* Rounded corners for the button appearance */
     transition: background-color 0.3s ease;
     /* Smooth transition on hover */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     width: 300px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-<<<<<<< HEAD
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); /* Add a nice shadow effect */
-}
-
-.languages-section-title:hover {
-    color: black; 
-=======
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     /* Add a nice shadow effect */
 }
 
 .languages-section-title:hover {
     color: black;
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     background-color: white;
 }
 
 .languages-container {
     display: flex;
-<<<<<<< HEAD
-    justify-content: center; /* Center the images horizontally */
-=======
     justify-content: center;
     /* Center the images horizontally */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     align-items: center;
     padding: 20px 0;
 }
 
 .languages-container img {
-<<<<<<< HEAD
-    width: 150px; /* Adjust the size of the language images */
-    height: 150px; /* Adjust the size of the language images */
-    margin: 0 18px; /* Add some spacing between the language images */
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Add a nice shadow effect */
-=======
     width: 150px;
     /* Adjust the size of the language images */
     height: 150px;
@@ -392,7 +280,6 @@ li {
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     /* Add a nice shadow effect */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     transition: transform 0.3s ease;
 }
 
@@ -402,29 +289,19 @@ li {
 
 .additional-languages-container {
     display: flex;
-<<<<<<< HEAD
-    justify-content: center; /* Center the images horizontally */
-=======
     justify-content: center;
     /* Center the images horizontally */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     align-items: center;
     padding: 20px;
 }
 
 .additional-languages-container img {
-<<<<<<< HEAD
-    width: 100px; /* Adjust the size of the additional language images */
-    height: 100px; /* Adjust the size of the additional language images */
-    margin: 0 18px; /* Add some spacing between the additional language images */
-=======
     width: 100px;
     /* Adjust the size of the additional language images */
     height: 100px;
     /* Adjust the size of the additional language images */
     margin: 0 18px;
     /* Add some spacing between the additional language images */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     border-radius: 5px;
     transition: transform 0.3s ease;
 
@@ -435,17 +312,11 @@ li {
 #dsa-logo:hover,
 #dbms-logo:hover {
     transition: transform 0.3s ease;
-<<<<<<< HEAD
-    transform: scale(1.1); /* Apply scaling effect on hover */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Add a nice shadow effect */
-    
-=======
     transform: scale(1.1);
     /* Apply scaling effect on hover */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     /* Add a nice shadow effect */
 
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 #c-logo {
@@ -455,10 +326,6 @@ li {
     height: 60px;
     /* filter: invert(1);   */
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 #cpp-logo {
     border-radius: 16px;
     padding: 15px;
@@ -466,10 +333,6 @@ li {
     height: 90px;
     /* filter: invert(1);   */
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 #java-logo {
     border-radius: 16px;
     padding: 15px;
@@ -477,10 +340,6 @@ li {
     height: 95px;
     /* filter: invert(1);   */
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 #python-logo {
     border-radius: 16px;
     padding: 15px;
@@ -488,10 +347,6 @@ li {
     height: 90px;
     /* filter: invert(1);   */
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 #adv-logo {
     margin-right: 15px;
     margin-left: 15px;
@@ -502,10 +357,6 @@ li {
     /* filter: invert(1);   */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 #dsa-logo {
     margin-right: 15px;
     margin-left: 15px;
@@ -516,10 +367,6 @@ li {
     /* filter: invert(1);   */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 #dbms-logo {
     margin-right: 15px;
     margin-left: 15px;
@@ -580,13 +427,6 @@ li {
     font-weight: bold;
     position: relative;
     margin-top: -50px;
-<<<<<<< HEAD
-    margin-bottom: -30px;   
-    color: white; /* Text color (black) */
-    background-color: rgb(31, 31, 31); /* Button color (adjust as desired) */
-    padding: 12px 10px; /* Add padding around the text */
-    border-radius: 23042003px; /* Rounded corners for the button appearance */
-=======
     margin-bottom: -30px;
     color: white;
     /* Text color (black) */
@@ -596,18 +436,13 @@ li {
     /* Add padding around the text */
     border-radius: 23042003px;
     /* Rounded corners for the button appearance */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     width: 250px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
-<<<<<<< HEAD
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); /* Add a nice shadow effect */
-=======
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     /* Add a nice shadow effect */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 iframe {
@@ -620,11 +455,7 @@ iframe {
 
 /* ------------------- Footer Section Styles ------------------- */
 
-<<<<<<< HEAD
-.footer-section {
-=======
 #footer {
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -644,12 +475,9 @@ iframe {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-<<<<<<< HEAD
-=======
     transition: transform 0.3s ease;
     border-radius: 16px;
 
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 .social-media img {
@@ -658,8 +486,6 @@ iframe {
     margin-right: 10px;
     margin-top: 10px;
     filter: invert(1);
-<<<<<<< HEAD
-=======
     transition: transform 0.3s ease;
     padding-left: 3px;
 
@@ -669,40 +495,18 @@ iframe {
 .social-media img:hover {
     transform: scale(1.1);
     /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 .footer-left p {
     font-size: 18px;
     font-weight: bold;
     color: white;
-<<<<<<< HEAD
-
-=======
     padding-left: 3px;
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 }
 
 .get-in-touch {
     font-size: 1.5rem;
     font-weight: bold;
-<<<<<<< HEAD
-    margin-top: 40px;
-    margin-left: -760px;
-    color: black;
-    background-color: rgb(169, 169, 169);
-    padding: 12px 10px;
-    border-radius: 23042003px;
-    height: 30px;
-    width: 180px;
-    padding-left: 40px;
-    top: 50%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-    transform: translate(-50%, -50%);
-    transition: background-color 0.3s ease;
-}
-
-=======
     margin-top: 20px;
     margin-left: -830px;
     color: white;
@@ -722,46 +526,18 @@ iframe {
     background-color: gray;
     transform: scale(1.1);
 }
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 
 .footer-middle {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    overflow: hidden; /* Hide the overflowing images */
-    width: 550px;
-    margin-left: 100px;
-=======
     overflow: hidden;
     /* Hide the overflowing images */
     width: 550px;
     margin-left: 60px;
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
     border-radius: 23px;
 }
 
 .slideshow {
-<<<<<<< HEAD
-    display: flex; /* Display images side by side */
-    animation: slideAnimation 60s linear infinite; /* Adjust the animation duration as needed */
-}
-
-.slideshow img {
-    margin-top: 10px;
-    width: 500px; /* Set the desired width for the images */
-    height: auto;
-    margin: 0 10px;
-    padding: 0;
-    border-radius: 16px;
-
-}
-
-@keyframes slideAnimation {
-    from {
-        transform: translateX(0);
-    }
-    to {
-=======
     display: flex;
     /* Display images side by side */
     animation: slideAnimation 60s linear infinite;
@@ -773,25 +549,10 @@ iframe {
     }
 
     100% {
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
         transform: translateX(-100%);
     }
 }
 
-<<<<<<< HEAD
-
-/* Optional CSS for slideshow animation */
-.slideshow img:not(:first-child) {
-    transform: translateX(100%);
-}
-
-.slideshow.animate img {
-    transform: translateX(-100%);
-}
-
-
-
-=======
 .slideshow img {
     margin-top: 10px;
     width: 500px;
@@ -808,27 +569,18 @@ iframe {
     animation-play-state: paused;
 }
 
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 .footer-right {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
     margin-right: 50px;
-<<<<<<< HEAD
-} 
-=======
 }
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 
 .footer-subcolumn {
     display: flex;
     flex-direction: column;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 .footer-subcolumn input {
     margin-bottom: 15px;
     padding: 10px;
@@ -837,10 +589,6 @@ iframe {
     width: 500px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 .footer-subcolumn .submit-button {
     background-color: lightgreen;
     color: rgb(53, 53, 53);
@@ -851,18 +599,12 @@ iframe {
     border-radius: 5px;
 }
 
-<<<<<<< HEAD
-=======
 /* Optional: Reset input font-size and font-weight */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 .footer-subcolumn input {
     font-size: 14px;
     font-weight: bolder;
 }
 
-<<<<<<< HEAD
-
-=======
 .subjects-checkbox,
 .locations-checkbox {
     display: flex;
@@ -887,4 +629,3 @@ iframe {
     margin-top: 12px;
     font-weight: bold;
 }
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541

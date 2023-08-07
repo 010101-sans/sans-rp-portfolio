@@ -31,56 +31,6 @@ booksContainer.addEventListener("mousemove", (e) => {
 
 /* ------------- For Query Handling ------------- */
 
-<<<<<<< HEAD
-function sendEmail() {
-    // Extract form data
-    var name = document.getElementById("nameInput").value;
-    var college = document.getElementById("collegeInput").value;
-    var phone = document.getElementById("phoneInput").value;
-    var subjects = document.getElementById("subjectsInput").value;
-    var message = document.getElementById("messageInput").value;
-    
-    // Format the email message
-    var emailMessage =
-    "Name: " + name + "\n" +
-    "College: " + college + "\n" +
-    "Phone Number: " + phone + "\n" +
-    "Subjects: " + subjects + "\n";
-    
-    if (message) { emailMessage += "Message: " + message + "\n"; }
-    
-    // Construct the mailto link
-    var emailAddress = "contactsanskarcs@gmail.com";
-    var subject = "Query from Website";
-    var mailtoLink =
-    "mailto:" + emailAddress +
-    "?subject=" + encodeURIComponent(subject) +
-    "&body=" + encodeURIComponent(emailMessage);
-    
-  // Create a hidden anchor element and set its attributes
-  var mailtoAnchor = document.createElement("a");
-  mailtoAnchor.setAttribute("href", mailtoLink);
-  mailtoAnchor.style.display = "none"; // Hide the anchor element
-  
-  // Add the anchor element to the document body
-  document.body.appendChild(mailtoAnchor);
-  
-  // Trigger the click event on the hidden anchor element
-  mailtoAnchor.click();
-  
-  // Remove the anchor element from the document body (optional)
-  document.body.removeChild(mailtoAnchor);
-  
-  // Reset the form fields (optional)
-  document.getElementById("nameInput").value = "";
-  document.getElementById("collegeInput").value = "";
-  document.getElementById("phoneInput").value = "";
-  document.getElementById("subjectsInput").value = "";
-  document.getElementById("messageInput").value = "";
-}
-
-/* ------------- slide-show ------------- */
-=======
 function submitForm(event) {
   event.preventDefault();
 
@@ -132,26 +82,10 @@ function getSelectedValues(selectId) {
 }
 
 /* ----------------------- slide-show ----------------------- */
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
 
 const slideshow = document.querySelector(".slideshow");
 const images = slideshow.querySelectorAll("img");
 let currentIndex = 0;
-<<<<<<< HEAD
-
-function startSlideshow() {
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % images.length;
-        updateSlide();
-    }, 3000); // Change the time (in milliseconds) to adjust the slide duration
-}
-
-function updateSlide() {
-    slideshow.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-startSlideshow();
-=======
 const totalImages = images.length;
 
 function startSlideshow() {
@@ -167,4 +101,3 @@ function updateSlide() {
 }
 
 startSlideshow();
->>>>>>> bc29a08b1fad9778a1aac80f6be2a326a90b7541
