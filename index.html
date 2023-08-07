@@ -4,19 +4,19 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/x-icon" href="/images/site-logo.png">
     <title>Ravi Programming</title>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/books_3d_index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+
     <div class="wallpaper"></div>
 
     <!------------------ NAVBAR ------------------>
@@ -28,13 +28,36 @@
             </div>
             <div class="navbar-links">
                 <ul>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#footer">Contact</a></li>
+                    <li><a id="my-blog" href="#blog">Blog</a></li>
+                    <li><a id="showCard" href="#">About</a></li>
+                    <li><a id="contact-me" href="#footer">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <div class="content" id="hiddenCard">
+        <div class="card">
+            <div class="card__side card__side--front">
+                <!-- Front Content -->
+                <div class="card__cont">
+                    <table class="front-table">
+                        <tr><td>Name</td><td>Ravi Majithia</td></tr>
+                        <tr><td>Age</td><td>30</td></tr>
+                        <tr><td>Phone</td><td>+91 9970627776</td></tr>
+                        <tr><td>Email</td><td>contactraviprogramming@gmail.com</td></tr>
+                        <tr><td>Profession</td><td>Teacher | Programmer</td></tr>
+                        <!-- Add more attributes and values here -->
+                    </table>
+                </div>
+            </div>
+            <div class="card__side card__side--back">
+                <!-- Back Content -->
+                <img src="/images/site-qr-code.png" alt="QR Code" class="qr-code">
+            </div>
+        </div>
+    </div>
+
 
     <!-------------- Profile Section ----------------->
     <section class="profile-section">
@@ -382,8 +405,8 @@
     </footer>
 
     <div class="copyright-box">
-        <div class="content">
-            <p>&copy; 2023 raviprogramming.io |  All rights reserved.</p>
+        <div class="copyright-content">
+            <p>&copy; 2023 raviprogramming.io.  All rights reserved.</p>
             <p>Designed & Programmed with ❤️ by Sanskar Suryawanshi</p>
         </div>
     </div>

@@ -4,15 +4,15 @@
 const contactButton = document.querySelector('a[href="#footer"]');
 
 // Add a click event listener to the "Contact" button
-contactButton.addEventListener('click', function (event) {
-    event.preventDefault();
+contactButton.addEventListener("click", function (event) {
+  event.preventDefault();
 
-    // Get the target element (the footer)
-    const footer = document.getElementById('footer');
+  // Get the target element (the footer)
+  const footer = document.getElementById("footer");
 
-    // Scroll to the footer with smooth behavior
-    footer.scrollIntoView({ behavior: 'smooth' });
-}); 
+  // Scroll to the footer with smooth behavior
+  footer.scrollIntoView({ behavior: "smooth" });
+});
 
 /* ------------- Book Images Horizontal Scroll ------------- */
 
@@ -23,27 +23,7 @@ let startX;
 let scrollLeft;
 
 // Event listeners for mouse events
-booksContainer.addEventListener("mousedown", (e) => {
-  isDragging = true;
-  startX = e.pageX - booksContainer.offsetLeft;
-  scrollLeft = booksContainer.scrollLeft;
-});
-
-booksContainer.addEventListener("mouseleave", () => {
-  isDragging = false;
-});
-
-booksContainer.addEventListener("mouseup", () => {
-  isDragging = false;
-});
-
-booksContainer.addEventListener("mousemove", (e) => {
-  if (!isDragging) return;
-  e.preventDefault();
-  const x = e.pageX - booksContainer.offsetLeft;
-  const walk = (x - startX) * 2; // Control the scroll speed here
-  booksContainer.scrollLeft = scrollLeft - walk;
-});
+// TODO
 
 /* ------------- For Query Handling ------------- */
 
@@ -118,4 +98,13 @@ function updateSlide() {
 
 startSlideshow();
 
-/* --------------------------- Loading Animation ------------------------ */
+/* --------------------------- Digital Card Animation ------------------------ */
+
+document.getElementById("showCard").addEventListener("click", function (event) {
+  var hiddenCard = document.getElementById("hiddenCard");
+  if (hiddenCard.style.display === "none") {
+    hiddenCard.style.display = "block";
+  } else {
+    hiddenCard.style.display = "none";
+  }
+});
