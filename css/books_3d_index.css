@@ -49,7 +49,7 @@ a {
     min-height: 300px;
     padding: 0 0 0 60px;
     vertical-align: top;
-    width: 500px;
+    width: 200px;
 }
 
 .book {
@@ -488,7 +488,7 @@ a {
     /* Enable horizontal scrolling */
     overflow-x: auto;
     overflow-y: hidden;
-    margin-top: 20px;
+    padding-top: 30px;
 }
 
 

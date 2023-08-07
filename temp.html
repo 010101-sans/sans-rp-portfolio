@@ -1,233 +1,44 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/books_3d_index.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link
+      href=""
+      rel="stylesheet"
+    />
     <title></title>
-</head>
+    <style>
 
-<body>
+        html {
+            background-color: #5f45bb;
+            background-image: linear-gradient(to bottom right, #180cac, #d054e4);
+            font-size: 16px;
+            min-height: 100vh;
+            text-shadow: 0 3px 5px rgba(0,0,0,0.1);
+        }
 
-    <!----------- Book Section ------------>
-    <section class="books-section">
-        <h2 class="books-section-title">Books I've Written</h2>
-            <div class="component">
-                <ul class="align">
-                    <li class="book-place-holder">
-                        <figure class='book'>
-                            <!-- Front -->
-                            <ul class='hardcover_front' id="book-1"><li></li><li></li></ul>
-                            <!-- Pages -->
-                            <ul class='page'><li></li>
-                                <li><a class="btn" href="#">View Book</a></li>
-                                <li></li><li></li><li></li>
-                            </ul>
-                            <!-- Back -->
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
+        .wallpaper {
+            display: block;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background-image: url("/images/site-bg.png");
+            background-position: center;
+            background-size: cover;
+            opacity: 0.2;
+            position: fixed;
+        }
+    </style>
+  </head>
+  
+  <body>
+      
+      
+      <div class="wallpaper"></div>
+      
 
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-2"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-3"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-4"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-5"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-6"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-7"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-8"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-9"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-10"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-11"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-12"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-13"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-14"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-15"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-16"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-17"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-18"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-19"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-20"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-21"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                    <li>
-                        <figure class='book'>
-                            <ul class='hardcover_front' id="book-22"><li></li><li></li></ul>
-                            <ul class='page'><li></li><li><a class="btn" href="#">View Book</a></li><li></li><li></li><li></li></ul>
-                            <ul class='hardcover_back'><li></li><li></li></ul>
-                            <ul class='book_spine'><li></li><li></li></ul>
-                        </figure>
-                    </li>
-
-                </ul>
-            </div>
-    </section>
-
-
-</body>
+  </body>
 
 </html>
-
-
-

@@ -14,15 +14,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <style>
+
+        html {
+            background-color: #5f45bb;
+            background-image: linear-gradient(to bottom right, #180cac, #d054e4);
+            font-size: 16px;
+            min-height: 100vh;
+            text-shadow: 0 3px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .wallpaper {
+            display: block;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background-image: url("/images/site-bg.png");
+            background-position: center;
+            background-size: cover;
+            opacity: 0.2;
+            position: fixed;
+            z-index: -1;
+        }
+
+    </style>
+        
 </head>
 
 <body>
+    <div class="wallpaper"></div>
 
     <!------------------ NAVBAR ------------------>
     <header>
         <nav class="navbar">
             <div class="navbar-logo">
-                <img id="site-logo" src="/images/site-logo.png" alt="Website Logo">
+                <!-- <img id="site-logo" src="/images/site-logo.png" alt="Website Logo"> -->
                 <span class="website-title">Ravi Programming</span>
             </div>
             <div class="navbar-links">
@@ -357,7 +385,7 @@
                 <input id="collegeInput" type="text" placeholder="Your College">
                 <input id="phoneInput" type="tel" placeholder="Your Phone Number">
         
-                <!-- Subjects Check-list Buttons -->wwwww
+                <!-- Subjects Check-list Buttons -->
                 <div class="subjects-checkbox">
                     <label><input type="checkbox" name="subject" value="C">C</label>
                     <label><input type="checkbox" name="subject" value="C++">C++</label>
@@ -378,9 +406,14 @@
                 <button id="submitButton" class="submit-button" onclick="submitForm()">Submit Your Query</button>
             </div>
         </div>
-
     </footer>
 
+    <div class="copyright-box">
+        <div class="content">
+            <p>&copy; 2023 raviprogramming.io |  All rights reserved.</p>
+            <p>Designed & Programmed with ❤️ by Sanskar Suryawanshi</p>
+        </div>
+    </div>
 
     <script src="/js/index.js"></script>
 

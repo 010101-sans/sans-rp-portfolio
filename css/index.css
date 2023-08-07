@@ -1,8 +1,10 @@
 /*------------------ NAVIGATION BAR -------------------*/
 
-* {
-    font-family: 'Quicksand', sans-serif;
-}
+* { font-family: 'Quicksand', sans-serif; }
+
+/* Apply gradient effect */
+
+
 
 /* Reset some default styles for consistency */
 body,
@@ -22,9 +24,15 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
-    color: #fff;
     padding: 12px;
+    
+    margin: 15px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-logo img {
@@ -79,6 +87,7 @@ li {
 }
 
 .navbar-links {
+    font-weight: bold;
     order: 2;
 }
 
@@ -92,9 +101,10 @@ li {
     /* Added to stack items vertically */
     height: 45vh;
     /* Adjust the height as per your requirement */
-    background-color: white;
     /* Background color for the profile section */
-
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: -20px;
 }
 
 .profile-content {
@@ -112,9 +122,12 @@ li {
     /* Adjust the size as per your profile picture */
     border-radius: 26042003px;
     margin-bottom: 10px;
-    /* Add space between the picture and the name */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Add shadow effect */
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 10px 8px rgba(0, 0, 0, 0.4);
+}
+
+.profile-details {
+    color: white;
 }
 
 .profile-details h2 {
@@ -138,9 +151,17 @@ li {
 /* ------------------- Books Section Styles ------------------- */
 
 .books-section {
-    background-color: #ecf0f1;
+    background-color: rgba(0, 0, 0, 0);
     text-align: center;
     margin-top: 30px;
+    
+    margin: 15px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
 }
 
 .books-section-title {
@@ -149,7 +170,7 @@ li {
     margin-top: 0px;
     color: white;
     /* Text color (black) */
-    background-color: rgb(31, 31, 31);
+    background-color: black;
     /* Button color (adjust as desired) */
     padding: 12px 10px;
     /* Add padding around the text */
@@ -162,8 +183,15 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-    /* Add a nice shadow effect */
+    color: #fff;
+    
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    border-radius: 23042003px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
+    
+    z-index: 1;
 }
 
 .books-section-title:hover {
@@ -176,13 +204,15 @@ li {
 .component::-webkit-scrollbar { 
     display: none; 
     margin-right: 100px;
-
+    
 }
 
 /* Make the images draggable with the mouse */
 .align {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    margin-top: -100px;
+    
 }
 
 
@@ -194,6 +224,18 @@ li {
     background-color: #f7f7f7;
     /* Adjust the background color as needed */
     text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.4);
+
+    margin: 15px;
+    margin-top: 100px; 
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
 }
 
 .languages-section-title {
@@ -218,6 +260,9 @@ li {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     /* Add a nice shadow effect */
 }
+.languages-section-title {
+    background-color: black;
+}
 
 .languages-section-title:hover {
     color: black;
@@ -240,9 +285,10 @@ li {
     margin: 0 18px;
     /* Add some spacing between the language images */
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     /* Add a nice shadow effect */
     transition: transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    filter: invert(1);
 }
 
 .languages-container img:hover {
@@ -259,14 +305,14 @@ li {
 
 .additional-languages-container img {
     width: 100px;
-    /* Adjust the size of the additional language images */
     height: 100px;
-    /* Adjust the size of the additional language images */
     margin: 0 18px;
-    /* Add some spacing between the additional language images */
     border-radius: 5px;
     transition: transform 0.3s ease;
-
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    
+    /* Add black shadow */
+    filter: invert(1);
 }
 
 /* Add scaling effect and shadow to the lower three images when hovered */
@@ -346,6 +392,19 @@ li {
     padding: 20px;
     background-color: #f7f7f7;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.4);
+
+    margin: 15px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
 }
 
 .location-section-title {
@@ -363,6 +422,7 @@ li {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    background-color: black;
 }
 
 .location-section-title:hover {
@@ -405,6 +465,7 @@ li {
     transform: translate(-50%, 0%);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     /* Add a nice shadow effect */
+    background-color: black;
 }
 
 iframe {
@@ -423,6 +484,16 @@ iframe {
     align-items: center;
     background-color: #323232;
     padding: 30px;
+
+    margin: 15px;
+    margin-bottom: 50px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 .footer-left {
@@ -496,6 +567,7 @@ iframe {
     /* If you want to center the content on the middle column, you can use the following CSS: */
     margin: 0 auto;
     border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -551,6 +623,11 @@ iframe {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 500px;
+    
+}
+
+.footer-subcolumn input:focus {
+    outline: none;
 }
 
 .footer-subcolumn .submit-button {
@@ -592,4 +669,29 @@ iframe {
     height: 16px;
     margin-top: 12px;
     font-weight: bold;
+}
+
+/* ------------------- copy right section ----------------- */
+
+.copyright-box {
+    padding: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.4);
+
+    margin: 15px;
+    margin-bottom: 50px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.copyrihgt-box .content {
+    margin: 10px 20px;
+    font-size: 0.9em;
 }
