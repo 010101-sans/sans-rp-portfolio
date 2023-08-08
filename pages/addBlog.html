@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/x-icon" href="/images/site-logo.png">
     <title>Ravi Programming</title>
-    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/addBlog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -23,17 +23,31 @@
         <nav class="navbar">
             <div class="navbar-logo">
                 <!-- <img id="site-logo" src="/images/site-logo.png" alt="Website Logo"> -->
-                <span class="website-title">Ravi Programming / Blogs</span>
+                <span class="website-title">Ravi Programming / Writing Blogs</span>
             </div>
             <div class="navbar-links">
                 <ul><li><a id="back-to-homepage" href="/index.html"> Homepage</a></li>
-                    <li><a id="add-new-blog" href="/pages/addBlog.html"> + </a></li>
+                    <li><a href="#"> Submit </a></li>
                 </ul>
             </div>
         </nav>
-    </header>    
 
-
-    <script src="/js/blog.js"></script>
+        <!------------ Blog Form -------------------->
+        <div class="blog-form">
+            <h2>Write Your Blog</h2>
+            <form id="blogSubmissionForm" action="/php/submit_blog.php" method="POST">
+                <label for="password">Enter Password</label>
+                <input type="password" id="password" name="password" required>
+                <label for="blogTitle">Blog Title</label>
+                <textarea type="textarea" id="blogTitle" name="blogTitle" required></textarea>
+                <label for="blogContent">Your Blog </label>
+                <textarea id="blogContent" name="blogContent" rows="6" required></textarea>
+                <button type="submit">Submit Blog</button>
+            </form>
+        </div>
+        
+        
+        
+        <script src="/js/blog.js"></script>
 </body>
 </html>

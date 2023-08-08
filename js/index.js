@@ -106,36 +106,17 @@ document.addEventListener("click", function (event) {
   }
 });
 
-/* ----------------------- Calculate Age ------------------------ */
 
-// Function to calculate the age based on the birth year
-function calculateAge(birthYear) {
+/* ------------ Age And Work-Ex Calculation ----------- */
+function calculateNumbersOfYearsFrom(year) {
   const currentYear = new Date().getFullYear();
-  return currentYear - birthYear;
+  return currentYear - year;
 }
 
-// Get the birth year (assuming you have the birth year value somewhere)
 const birthYear = 1984;
-
-// Calculate the age
-const age = calculateAge(birthYear);
-
-// Update the content of the <td> element with the calculated age
+const age = calculateNumbersOfYearsFrom(birthYear);
 document.getElementById("ageValue").textContent = age;
 
-/* ----------------------- Calculate Work Exp ------------------------ */
-
-// Function to calculate the age based on the birth year
-function calculateAge(workExpStartYear) {
-  const currentYear = new Date().getFullYear();
-  return currentYear - workExpStartYear;
-}
-
-// Get the birth year (assuming you have the birth year value somewhere)
 const workExpStartYear = 2007;
-
-// Calculate the age
-const workExp = calculateAge(workExpStartYear);
-
-// Update the content of the <td> element with the calculated age
+const workExp = calculateNumbersOfYearsFrom(workExpStartYear);
 document.getElementById("workExpValue").textContent = workExp;

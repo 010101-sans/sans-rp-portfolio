@@ -40,6 +40,9 @@ body, h1, h2, h3, p, ul, li {
     font-weight: bold;
     margin-left: 10px;
 }
+.website-title a {
+    text-decoration: none;
+}
 
 /* Updated styling for navigation links */
 .navbar-links ul {

@@ -1,0 +1,192 @@
+/*------------------ NAVIGATION BAR -------------------*/
+
+* { font-family: 'Quicksand', sans-serif; }
+
+/* Apply gradient effect */
+html {
+    background-color: #5f45bb;
+    background-image: linear-gradient(to bottom right, #180cac, #d054e4);
+    font-size: 16px;
+    min-height: 100vh;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.wallpaper {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: url("/images/laptop-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.25;
+    position: fixed; /* Change from "absolute" to "fixed" */
+    z-index: -1;
+}
+
+/* Reset some default styles for consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    
+    margin: 15px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 23042003px;
+    filter: invert(1);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Align the navbar-logo to the left */
+}
+
+.website-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Updated styling for navigation links */
+.navbar-links ul {
+    list-style: none;
+    /* Add the following CSS to align the links to the right */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #fff;
+    /* Change text color to white */
+}
+
+.navbar-links li:first-child {
+    margin-left: 0;
+}
+
+/* Add the following CSS to align the navbar-logo and navbar-links */
+.navbar-logo {
+    order: 1;
+}
+
+.navbar-links {
+    font-weight: bold;
+    order: 2;
+}
+
+
+/* ------------------------------- Blogs ---------------------- */
+
+/* General styles for the form */
+.blog-form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 70vh;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border: 4px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
+    padding-right: 50px;
+}
+
+.blog-form h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.blog-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+.blog-form input[type="password"]:focus,
+.blog-form textarea:focus, 
+.blog-form button[type="submit"]:focus {
+    outline: none;
+}
+
+.blog-form input[type="password"],
+.blog-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.blog-form button[type="submit"] {
+    background-color: #5f45bb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.blog-form button[type="submit"]:hover {
+    background-color: #472f9f;
+}
+
+#blogTitle {
+    height: 20px;
+    resize: none;
+}
+
+#blogContent {
+
+    resize: vertical; /* Allow horizontal resizing */
+    overflow-x: hidden; /* Hide vertical scrollbar */
+    max-height: 230px; /* Set a maximum height if needed */
+    min-height: 50px; /* Set a minimum height if needed */
+    width: 100%; /* Adjust the width as desired */
+}

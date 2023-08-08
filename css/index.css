@@ -13,6 +13,7 @@ html {
     min-height: 100vh;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     position: relative;
+
 }
 
 .wallpaper {
@@ -44,7 +45,7 @@ li {
 }
 
 
-/* Navbar Styles */
+/*-------------------- Navbar Styles --------------------*/
 .navbar {
     display: flex;
     align-items: center;
@@ -169,7 +170,7 @@ li {
 
 .card__side--back {
     transform: rotateY(180deg);
-    background-color: #1c1c1c;
+    background-image: linear-gradient(to bottom right, #180cac, #d054e4);;
     z-index: 1;
 }
 
@@ -402,6 +403,7 @@ li {
     /* Center the images horizontally */
     align-items: center;
     padding: 20px 0;
+    flex-wrap: wrap;
 }
 
 .languages-container img {
@@ -428,6 +430,7 @@ li {
     /* Center the images horizontally */
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .additional-languages-container img {
@@ -518,9 +521,6 @@ li {
     padding: 20px;
     background-color: #f7f7f7;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.4);
 
     margin: 15px;
     margin-top: 100px;
@@ -706,8 +706,8 @@ iframe {
     /* If you want to center the content on the middle column, you can use the following CSS: */
     margin: 0 auto;
     border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
-
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4); */
+    
 }
 
 .slideshow {
@@ -715,6 +715,7 @@ iframe {
     animation: slideAnimation 60s linear infinite;
     /* Center the content within the footer-middle column */
     justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes slideAnimation {
@@ -842,4 +843,117 @@ iframe {
     margin: 10px 20px;
     font-size: 1em;
     font-weight: lighter;
+}
+
+/* ------------------------- Mobile View --------------------------- */
+
+@media (max-width: 768px) {
+
+    html { font-size: 14px; transition: transform 0.3s ease;}
+
+    /* - - - - - - - - - - - -  NAVBAR - - - - - - - - - - - - - */
+
+    .navbar { flex-direction: row; padding: 10px; padding-left:10px; text-align: center; font-size: 15px;}
+  
+    .navbar-logo { margin-right: 0; margin-bottom: 10px; }
+  
+    .navbar-logo img { width: 80px; height: 80px; border-radius: 50%; filter: invert(1); }
+    
+    .website-title { font-size: 1.2rem; margin-left: -170px; padding-top: 10px; }
+    
+    .navbar-links { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; }
+    
+    .navbar-links li { display: block; margin: 6px 6px; }
+    
+  
+    /* - - - - - - - - -  Digital Card (About) - - - - - - - - - -  */
+    
+    #hiddenCard { display: none; position: relative; padding: 10px; margin-bottom: -60px;}
+    
+    .card { perspective: 150rem; height: 20rem; width: 80%; position: relative; margin-left: 30px;}
+    
+    .card__side { padding: 10px; height: 16rem; width: 100%; margin-right: 15px; }
+    
+    .card__cont { height: 15rem; }
+    
+    .front-table { font-size: 1rem; }
+    
+    .qr-code { width: 40%; height: auto; margin: 25px 120px; }
+
+  
+    /* - - - - - - - - -  Profile Section - - - - - - - - - -  */
+    
+    .profile-section { height: auto; padding: 20px; }
+
+    .profile-content { margin-top: 15px; margin-bottom: 15px; }
+
+    .profile-content img { width: 180px; height: 180px; }
+    
+    .profile-details h2 { font-size: 1.8rem; }
+    
+    .profile-occupations p { font-size: 1rem; padding-left: 10px; }
+
+    
+    /* - - - - - - - - -  Book Section - - - - - - - - - -  */
+    /* There is no need to change any thing here, it just fits! */
+    
+    /* - - - - - - - - -  Language Section - - - - - - - - - -  */
+    .languages-container { margin-top: -20px; }
+    .additional-languages-container { margin-top: -30px; margin-bottom: -20px; }
+    
+    .languages-container img,
+    .additional-languages-container img 
+    { width: 80px; height: 80px; padding: -100px; margin: 10px; }
+    
+    
+    /* - - - - - - - - -  Location Section - - - - - - - - - -  */
+    
+    
+    .location-container { flex-direction: column; padding-bottom: -100px;}
+    
+    .location-subsection { margin-bottom: 0px;  margin-top: -10px; width: 100%; }
+    
+    .location-subsection h3 { width: 200px; margin-top: 5px; margin-bottom: 5px; }  
+    
+    iframe { margin-top: 10px; height: 250px; width: 350px;}
+    
+    /* - - - - - - - - -  Footer Section - - - - - - - - - -  */
+
+    #footer { flex-direction: column; align-items: center; }
+    
+    .footer-left,
+    .footer-middle,
+    .footer-right { width: 100%; margin: 0; padding: 10px; }
+    
+    .footer-left { flex-direction: row; text-align: center; }
+
+    .footer-left { flex-wrap: wrap; }
+
+    .social-media p, .get-in-touch { display: none;}
+    
+    .social-media img { height: 25px; width: auto;}
+
+    .footer-middle { width: 100%; max-width: 500px; overflow: hidden; margin: 10px auto; }
+
+    .slideshow img { width: 400px; height: auto; }
+
+    .footer-right { text-align: center; }
+
+    .footer-subcolumn input,
+
+    .footer-subcolumn .submit-button { width: 100%; max-width: 500px; }
+
+    .subjects-checkbox { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
+    
+    .subjects-checkbox label { margin-right: 15px; margin-bottom: 5px; flex: 0 0 50%; }
+
+    .locations-checkbox { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
+
+    .locations-checkbox label { margin-right: 15px; margin-bottom: 5px; flex: 0 0 50%; }
+
+    #submitButton { margin-top: 15px; }
+
+    .copyright-box { padding: 10px; }
+    
+    .copyright-box .copyright-content { margin: 5px; font-size: 0.9em; }
 }
