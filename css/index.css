@@ -124,7 +124,9 @@ li {
     width: 100%;
     padding-left: 1000px;
     padding-top: 30px;
-    transition: opacity 0.5s ease;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 
@@ -838,6 +840,6 @@ iframe {
 
 .copyright-box .copyright-content {
     margin: 10px 20px;
-    font-size: 0.9em;
+    font-size: 1em;
+    font-weight: lighter;
 }
-

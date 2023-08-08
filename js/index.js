@@ -26,55 +26,26 @@ let scrollLeft;
 // TODO
 
 /* ------------- For Query Handling ------------- */
+function submitForm() {
+  const name = document.getElementById("nameInput").value;
+  const college = document.getElementById("collegeInput").value;
+  const phone = document.getElementById("phoneInput").value;
+  const subjects = Array.from(
+    document.querySelectorAll('input[name="subject"]:checked')
+  ).map((input) => input.value);
+  const locations = Array.from(
+    document.querySelectorAll('input[name="location"]:checked')
+  ).map((input) => input.value);
+  const message = document.getElementById("messageInput").value;
 
-function submitForm(event) {
-  event.preventDefault();
-
-  const name = document.getElementById("name").value;
-  const college = document.getElementById("college").value;
-  const phone = document.getElementById("phone").value;
-  const subjects = getSelectedValues("subject");
-  const locations = getSelectedValues("location");
-
-  const formData = {
-    name,
-    college,
-    phone,
-    subjects,
-    locations,
-  };
-
-  // Make an HTTP POST request to the server
-  fetch("/submitQuery", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => response.text())
-    .then((message) => {
-      console.log(message);
-      alert(message);
-      // Clear the form after successful submission
-      document.getElementById("queryForm").reset();
-    })
-    .catch((error) => {
-      console.error("Error submitting the form:", error);
-      alert("Error submitting the form. Please try again.");
-    });
-}
-
-function getSelectedValues(selectId) {
-  const selectElement = document.getElementById(selectId);
-  const selectedValues = [];
-  for (let i = 0; i < selectElement.options.length; i++) {
-    const option = selectElement.options[i];
-    if (option.selected) {
-      selectedValues.push(option.value);
-    }
-  }
-  return selectedValues;
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "/submit_form", true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhr.send(
+    `name=${name}&college=${college}&phone=${phone}&subjects=${JSON.stringify(
+      subjects
+    )}&locations=${JSON.stringify(locations)}&message=${message}`
+  );
 }
 
 /* ----------------------- slide-show ----------------------- */
@@ -100,11 +71,34 @@ startSlideshow();
 
 /* --------------------------- Digital Card Animation ------------------------ */
 
-document.getElementById("showCard").addEventListener("click", function (event) {
-  var hiddenCard = document.getElementById("hiddenCard");
-  if (hiddenCard.style.display === "none") {
-    hiddenCard.style.display = "block";
+// Get references to the link and the target div
+const showHideLink = document.getElementById('showCard');
+const targetDiv = document.getElementById('hiddenCard');
+
+// Add a click event listener to the link
+showHideLink.addEventListener('click', () => {
+  if (targetDiv.style.display === 'none') {
+    // If the div is hidden, show it with a fade-in effect
+    targetDiv.style.display = 'block';
+    setTimeout(() => {
+      targetDiv.style.opacity = '1';
+    }, 10); // A small delay to ensure the display change takes effect before fading in
   } else {
-    hiddenCard.style.display = "none";
+    // If the div is visible, hide it with a fade-out effect
+    targetDiv.style.opacity = '0';
+    targetDiv.style.opacity = '0';
+    setTimeout(() => {
+      targetDiv.style.display = 'none';
+    }, 300); // Time for the fade-out effect (should match the transition time in CSS)
   }
+});
+
+
+document.addEventListener("click", function (event) {
+    var hiddenCard = document.getElementById("hiddenCard");
+    if (event.target !== document.getElementById("showCard") && event.target !== hiddenCard) {
+
+        hiddenCard.style.opacity = '0';
+        setTimeout(() => { hiddenCard.style.display = "none"; }, 300);
+    }
 });
