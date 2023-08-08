@@ -72,33 +72,70 @@ startSlideshow();
 /* --------------------------- Digital Card Animation ------------------------ */
 
 // Get references to the link and the target div
-const showHideLink = document.getElementById('showCard');
-const targetDiv = document.getElementById('hiddenCard');
+const showHideLink = document.getElementById("showCard");
+const targetDiv = document.getElementById("hiddenCard");
 
 // Add a click event listener to the link
-showHideLink.addEventListener('click', () => {
-  if (targetDiv.style.display === 'none') {
+showHideLink.addEventListener("click", () => {
+  if (targetDiv.style.display === "none") {
     // If the div is hidden, show it with a fade-in effect
-    targetDiv.style.display = 'block';
+    targetDiv.style.display = "block";
     setTimeout(() => {
-      targetDiv.style.opacity = '1';
+      targetDiv.style.opacity = "1";
     }, 10); // A small delay to ensure the display change takes effect before fading in
   } else {
     // If the div is visible, hide it with a fade-out effect
-    targetDiv.style.opacity = '0';
-    targetDiv.style.opacity = '0';
+    targetDiv.style.opacity = "0";
+    targetDiv.style.opacity = "0";
     setTimeout(() => {
-      targetDiv.style.display = 'none';
+      targetDiv.style.display = "none";
     }, 300); // Time for the fade-out effect (should match the transition time in CSS)
   }
 });
 
-
 document.addEventListener("click", function (event) {
-    var hiddenCard = document.getElementById("hiddenCard");
-    if (event.target !== document.getElementById("showCard") && event.target !== hiddenCard) {
-
-        hiddenCard.style.opacity = '0';
-        setTimeout(() => { hiddenCard.style.display = "none"; }, 300);
-    }
+  var hiddenCard = document.getElementById("hiddenCard");
+  if (
+    event.target !== document.getElementById("showCard") &&
+    event.target !== hiddenCard
+  ) {
+    hiddenCard.style.opacity = "0";
+    setTimeout(() => {
+      hiddenCard.style.display = "none";
+    }, 300);
+  }
 });
+
+/* ----------------------- Calculate Age ------------------------ */
+
+// Function to calculate the age based on the birth year
+function calculateAge(birthYear) {
+  const currentYear = new Date().getFullYear();
+  return currentYear - birthYear;
+}
+
+// Get the birth year (assuming you have the birth year value somewhere)
+const birthYear = 1984;
+
+// Calculate the age
+const age = calculateAge(birthYear);
+
+// Update the content of the <td> element with the calculated age
+document.getElementById("ageValue").textContent = age;
+
+/* ----------------------- Calculate Work Exp ------------------------ */
+
+// Function to calculate the age based on the birth year
+function calculateAge(workExpStartYear) {
+  const currentYear = new Date().getFullYear();
+  return currentYear - workExpStartYear;
+}
+
+// Get the birth year (assuming you have the birth year value somewhere)
+const workExpStartYear = 2007;
+
+// Calculate the age
+const workExp = calculateAge(workExpStartYear);
+
+// Update the content of the <td> element with the calculated age
+document.getElementById("workExpValue").textContent = workExp;
