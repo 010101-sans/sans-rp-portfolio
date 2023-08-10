@@ -27,25 +27,35 @@ let scrollLeft;
 
 /* ------------- For Query Handling ------------- */
 function submitForm() {
+
   const name = document.getElementById("nameInput").value;
   const college = document.getElementById("collegeInput").value;
   const phone = document.getElementById("phoneInput").value;
-  const subjects = Array.from(
-    document.querySelectorAll('input[name="subject"]:checked')
-  ).map((input) => input.value);
-  const locations = Array.from(
-    document.querySelectorAll('input[name="location"]:checked')
-  ).map((input) => input.value);
+  const subjects = Array.from(document.querySelectorAll('input[name="subject"]:checked')).map((input) => input.value);
+  const locations = Array.from(document.querySelectorAll('input[name="location"]:checked')).map((input) => input.value);
   const message = document.getElementById("messageInput").value;
 
-  const xhr = new XMLHttpRequest();
-  xhr.open("POST", "/submit_form", true);
-  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhr.send(
-    `name=${name}&college=${college}&phone=${phone}&subjects=${JSON.stringify(
-      subjects
-    )}&locations=${JSON.stringify(locations)}&message=${message}`
-  );
+  const formattedMessage = `
+    Name: ${name}<br>
+    College: ${college}<br>
+    Phone: ${phone}<br>
+    Subjects: ${subjects.join(', ')}<br>
+    Locations: ${locations.join(', ')}<br>
+    Message: ${message}<br>
+`;
+
+// port : 2525
+  Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "sanskarsuryawanshi123@gmail.com",
+        Password : "77EDDE0D4F58CDB6C33216BBCECE219C7CEE",
+        To : "majithiaravi@gmail.com",
+        From : "sanskarsuryawanshi123@gmail.com",
+        Subject : "Class Query",
+        Body : formattedMessage
+    }).then(
+        message => alert(message)
+    );
 }
 
 /* ----------------------- slide-show ----------------------- */

@@ -351,7 +351,7 @@
                 <p>Email</p>
             </div>
             <div class="social-media">
-                <a href="tel:+1234567890"><img src="/images/socials/phone-logo.svg" alt="Phone Logo"></a>
+                <a href="tel:+1234567890"><img src="/images/socials/phone-logo.svg" alt="Phone Logo" id="phone-logo"></a>
                 <p>Phone</p>
             </div>
         </div>
@@ -376,33 +376,33 @@
         <!-- Right Column -->
         <div class="footer-right">
             <!-- Left Sub-Column -->
-            <div class="footer-subcolumn">
+            <form class="footer-subcolumn" onsubmit="submitForm(); reset(); return false;">
                 <input id="nameInput" type="text" placeholder="Your Name">
                 <input id="collegeInput" type="text" placeholder="Your College">
                 <input id="phoneInput" type="tel" placeholder="Your Phone Number">
                 
                 <!-- Subjects Check-list Buttons -->
                 <div class="subjects-checkbox">
-                    <label><input type="checkbox" name="subject" value="C">C</label>
-                    <label><input type="checkbox" name="subject" value="C++">C++</label>
-                    <label><input type="checkbox" name="subject" value="DSA">DSA</label>
-                    <label><input type="checkbox" name="subject" value="Java">Java</label>
-                    <label><input type="checkbox" name="subject" value="Python">Python</label>
-                    <label><input type="checkbox" name="subject" value="Adv. Java">Adv. Java</label>
-                    <label><input type="checkbox" name="subject" value="DBMS">DBMS</label>
+                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="C">C</label>
+                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="C++">C++</label>
+                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="DSA">DSA</label>
+                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="Java">Java</label>
+                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="Python">Python</label>
+                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="Adv. Java">Adv. Java</label>
+                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="DBMS">DBMS</label>
                 </div>
                 
                 <!-- Locations Check-list Buttons -->
                 <div class="locations-checkbox">
-                    <label><input type="checkbox" name="location" value="Osmanpura">Osmanpura | Morning</label>
-                    <label><input type="checkbox" name="location" value="Cidco">Cidco | Evening</label>
+                    <label><input id="checkbox-location" type="checkbox" name="location" value="Osmanpura">Osmanpura | Morning</label>
+                    <label><input id="checkbox-location" type="checkbox" name="location" value="Cidco">Cidco | Evening</label>
                 </div>
                 
                 <input id="messageInput" type="text" placeholder="Message (Optional)">
-                <!-- TODO -->
-                <button id="submitButton" class="submit-button" onclick="submitForm()">Submit Your Query</button>
-            </div>
+                <button type="submit" id="submitButton" class="submit-button">Submit Your Query</button>
+            </form>
         </div>
+
     </footer>
 
     <div class="copyright-box">
@@ -413,7 +413,7 @@
     </div>
 
     <script src="/js/index.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
