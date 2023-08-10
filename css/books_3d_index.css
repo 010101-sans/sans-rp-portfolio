@@ -506,25 +506,28 @@ a {
     padding-right: 180px;
 }
 
-#book-1 li:first-child  { background-image: url(/images/books/book.png); }
-#book-2 li:first-child  { background-image: url(/images/books/book.png); }
-#book-3 li:first-child  { background-image: url(/images/books/book.png); }
-#book-4 li:first-child  { background-image: url(/images/books/book.png); }
-#book-5 li:first-child  { background-image: url(/images/books/book.png); }
-#book-6 li:first-child  { background-image: url(/images/books/book.png); }
-#book-7 li:first-child  { background-image: url(/images/books/book.png); }
-#book-8 li:first-child  { background-image: url(/images/books/book.png); }
-#book-9 li:first-child  { background-image: url(/images/books/book.png); }
-#book-10 li:first-child { background-image: url(/images/books/book.png); }
-#book-11 li:first-child { background-image: url(/images/books/book.png); }
-#book-12 li:first-child { background-image: url(/images/books/book.png); }
-#book-13 li:first-child { background-image: url(/images/books/book.png); }
-#book-14 li:first-child { background-image: url(/images/books/book.png); }
-#book-15 li:first-child { background-image: url(/images/books/book.png); }
-#book-16 li:first-child { background-image: url(/images/books/book.png); }
-#book-17 li:first-child { background-image: url(/images/books/book.png); }
-#book-18 li:first-child { background-image: url(/images/books/book.png); }
-#book-19 li:first-child { background-image: url(/images/books/book.png); }
-#book-20 li:first-child { background-image: url(/images/books/book.png); }
-#book-21 li:first-child { background-image: url(/images/books/book.png); }
-#book-22 li:first-child { background-image: url(/images/books/book.png); }
+#book-1 li:first-child  { background-image: url(/images/books/book1.jpg); }
+#book-2 li:first-child  { background-image: url(/images/books/book1.jpg); }
+#book-3 li:first-child  { background-image: url(/images/books/book4.jpg); }
+#book-4 li:first-child  { background-image: url(/images/books/book5.jpg); }
+#book-5 li:first-child  { background-image: url(/images/books/book6.jpg); }
+#book-6 li:first-child  { background-image: url(/images/books/book7.jpg); }
+#book-7 li:first-child  { background-image: url(/images/books/book3.jpg); }
+#book-8 li:first-child  { background-image: url(/images/books/book1.jpg); }
+#book-9 li:first-child  { background-image: url(/images/books/book1.jpg); }
+#book-10 li:first-child { background-image: url(/images/books/book10.jpg); }
+#book-11 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-12 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-13 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-14 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-15 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-16 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-17 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-18 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-19 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-20 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-21 li:first-child { background-image: url(/images/books/book1.jpg); }
+#book-22 li:first-child { background-image: url(/images/books/book1.jpg); }
+
+
+/* ----------------------------- Mobile View ----------------------- */

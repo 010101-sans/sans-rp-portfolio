@@ -117,6 +117,10 @@ document.addEventListener("click", function (event) {
 });
 
 
+// - - - - - - - - - Mobile View - - - - - - - - - - - - - -
+
+
+
 /* ------------ Age And Work-Ex Calculation ----------- */
 function calculateNumbersOfYearsFrom(year) {
   const currentYear = new Date().getFullYear();

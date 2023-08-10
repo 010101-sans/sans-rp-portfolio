@@ -29,15 +29,15 @@
             <div class="navbar-links">
                 <ul>
                     <li><a id="my-blog" href="/pages/blog.html">Blog</a></li>
-                    <li><a id="showCard" href="#">About</a></li>
+                    <li><a id="showCard" href="javascript:void(0);" onclick="toggleCard(event)">About</a></li>
                     <li><a id="contact-me" href="#footer">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div class="content" id="hiddenCard">
-        <div class="card">
+    <div class="content" id="hiddenCard" >
+        <div class="card"  onclick="toggleCard()">
             <div class="card__side card__side--front">
                 <!-- Front Content -->
                 <div class="card__cont">
@@ -359,16 +359,32 @@
         <!-- Middle Column (Slideshow) -->
         <div class="footer-middle">
             <div class="slideshow">
-                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 1">
-                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 2">
-                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 3">
-                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 4">
+                <img src="/images/slideshow/img1.jpg" alt="Slideshow Image 1">
+                <img src="/images/slideshow/img2.jpg" alt="Slideshow Image 2">
+                <img src="/images/slideshow/img3.jpg" alt="Slideshow Image 3">
+                <!-- <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 4">
+                    <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 5">
+                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 6">
+                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 7">
+                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 8">
+                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 9">
+                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 10"> -->
+            </div>
+                
+            <div class="slideshow">
+            <!-- repeat all images again -->
+                <img src="/images/slideshow/img1.jpg" alt="Slideshow Image 1">
+                <img src="/images/slideshow/img2.jpg" alt="Slideshow Image 2">
+                <img src="/images/slideshow/img3.jpg" alt="Slideshow Image 3">
+                <!-- <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 4">
                 <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 5">
                 <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 6">
                 <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 7">
                 <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 8">
                 <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 9">
-                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 10">
+                <img src="/images/slideshow/me&RaviSir.jpg" alt="Slideshow Image 10"> -->
+                
+                <!-- adjust the animation timing if number of images are being changed -->
             </div>
         </div>
 
@@ -383,19 +399,19 @@
                 
                 <!-- Subjects Check-list Buttons -->
                 <div class="subjects-checkbox">
-                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="C">C</label>
-                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="C++">C++</label>
-                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="DSA">DSA</label>
-                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="Java">Java</label>
-                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="Python">Python</label>
-                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="Adv. Java">Adv. Java</label>
-                    <label><input id="checkbox-subject" type="checkbox" name="subject" value="DBMS">DBMS</label>
+                    <label><input type="checkbox" name="subject" value="C"><span class="checkbox-label">C</span></label>
+                    <label><input type="checkbox" name="subject" value="C++"><span class="checkbox-label">C++</span></label>
+                    <label><input type="checkbox" name="subject" value="DSA"><span class="checkbox-label">DSA</span></label>
+                    <label><input type="checkbox" name="subject" value="Java"><span class="checkbox-label">Java</span></label>
+                    <label><input type="checkbox" name="subject" value="Python"><span class="checkbox-label">Python</span></label>
+                    <label><input type="checkbox" name="subject" value="Adv. Java"><span class="checkbox-label">Adv. Java</span></label>
+                    <label><input type="checkbox" name="subject" value="DBMS"><span class="checkbox-label">DBMS</span></label>
                 </div>
                 
                 <!-- Locations Check-list Buttons -->
                 <div class="locations-checkbox">
-                    <label><input id="checkbox-location" type="checkbox" name="location" value="Osmanpura">Osmanpura | Morning</label>
-                    <label><input id="checkbox-location" type="checkbox" name="location" value="Cidco">Cidco | Evening</label>
+                    <label><input type="checkbox" name="location" value="Osmanpura"><span class="checkbox-label">Osmanpura | Morning</span></label>
+                    <label><input type="checkbox" name="location" value="Cidco"><span class="checkbox-label">Cidco | Evening</span></label>
                 </div>
                 
                 <input id="messageInput" type="text" placeholder="Message (Optional)">

@@ -19,18 +19,16 @@ html {
 .wallpaper {
     display: block;
     height: 100%;
+    width: 100%;
     left: 0;
     top: 0;
-    width: 100%;
     background-image: url("/images/laptop-bg.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: auto 100%;
     opacity: 0.25;
     position: fixed; /* Change from "absolute" to "fixed" */
     z-index: -1;
 }
-
-
 
 /* Reset some default styles for consistency */
 body,
@@ -128,6 +126,7 @@ li {
 
     opacity: 0;
     transition: opacity 0.3s ease;
+
 }
 
 
@@ -243,6 +242,9 @@ li {
     color: white;
     background-color: rgba(0, 0, 0, 0);
     margin-top: -20px;
+
+    transition: margin-top 0.3s ease; /* Add transition property */
+    margin-top: 0; /* Initial margin */
 }
 
 .profile-content {
@@ -633,7 +635,7 @@ iframe {
 
 .footer-left {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* Update padding and margin to create space around the footer-left content */
     padding: 10px;
     margin-right: 20px;
@@ -713,7 +715,7 @@ iframe {
 
 .slideshow {
     display: flex;
-    animation: slideAnimation 60s linear infinite;
+    animation: slideAnimation 20s linear infinite;
     /* Center the content within the footer-middle column */
     justify-content: center;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4); */
@@ -741,9 +743,7 @@ iframe {
 }
 
 /* Optional: Pause animation on hover */
-.slideshow:hover {
-    animation-play-state: paused;
-}
+/* .slideshow:hover { animation-play-state: paused; } */
 
 .footer-right {
     display: flex;
@@ -802,6 +802,7 @@ iframe {
 }
 .locations-checkbox {
     padding-bottom: 22px;
+    margin-top: 10px;
 }
 
 .subjects-checkbox label,
@@ -847,6 +848,7 @@ iframe {
     border: 4px solid rgba(255, 255, 255, 0.18);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), 0 8px 8px rgba(0, 0, 0, 0.4);
+    padding-right: 10px;
 }
 
 .copyright-box .copyright-content {
@@ -887,9 +889,11 @@ iframe {
     
     .card__cont { height: 15rem; }
     
+    
+
     .front-table { font-size: 1rem; }
     
-    .qr-code { width: 40%; height: auto; margin: 25px 120px; }
+    .qr-code { width: 40%; height: auto; margin: 0 auto; margin-top: 40px; display: block; }
 
   
     /* - - - - - - - - -  Profile Section - - - - - - - - - -  */
@@ -954,7 +958,7 @@ iframe {
         
     .slideshow img { width: 400px; height: auto; }
 
-    .footer-right { text-align: center; }
+    .footer-right { text-align: center; flex-direction: column;}
 
     .footer-subcolumn input,
     .footer-subcolumn .submit-button { width: 100%; max-width: 500px; }
@@ -972,6 +976,8 @@ iframe {
     .locations-checkbox label 
     { margin-bottom: -12px; width: auto;}
 
+    .checkbox-label { padding-left: 10px; }
+    
     .copyright-box { padding: 10px; }
     
     .copyright-box .copyright-content { margin: 5px; font-size: 0.9em; }
