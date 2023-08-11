@@ -1,6 +1,6 @@
 /* ------------ Age And Work-Ex Calculation ----------- */
 function calculateNumbersOfYearsFrom(year) {
-  const currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear();
   return currentYear - year;
 }
 
@@ -16,7 +16,7 @@ document.getElementById("workExpValue").textContent = workExp;
 /* ----------------  ----------------- */
 document.addEventListener("DOMContentLoaded", function () {
     const blogForm = document.getElementById("blogSubmissionForm");
-
+    
     blogForm.addEventListener("submit", function (event) {
         event.preventDefault();
         const password = event.target.elements.password.value;
@@ -36,3 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.target.reset();
     });
 });
+
+/* ------------ Submit New Blog ----------- */
+
+    

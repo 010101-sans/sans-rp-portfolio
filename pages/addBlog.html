@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="/css/addBlog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -26,7 +27,8 @@
                 <span class="website-title">Ravi Programming / Writing Blogs</span>
             </div>
             <div class="navbar-links">
-                <ul><li><a id="back-to-homepage" href="/index.html"> Homepage</a></li>
+                <ul>
+                    <li><a id="back-to-homepage" href="/index.html"> Homepage</a></li>
                     <li><a href="#"> Submit </a></li>
                 </ul>
             </div>
@@ -35,7 +37,8 @@
         <!------------ Blog Form -------------------->
         <div class="blog-form">
             <h2>Write Your Blog</h2>
-            <form id="blogSubmissionForm" action="/php/submit_blog.php" method="POST">
+            <!-- <form id="blogSubmissionForm" action="/php/submit_blog.php" method="POST"> -->
+            <form id="blogSubmissionForm">
                 <label for="password">Enter Password</label>
                 <input type="password" id="password" name="password" required>
                 <label for="blogTitle">Blog Title</label>
@@ -45,9 +48,47 @@
                 <button type="submit">Submit Blog</button>
             </form>
         </div>
-        
-        
-        
-        <script src="/js/blog.js"></script>
+
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const blogForm = document.getElementById("blogSubmissionForm");
+
+                blogForm.addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent default form submission behavior
+
+                    const password = document.getElementById("password").value;
+                    const blogTitle = document.getElementById("blogTitle").value;
+                    const blogContent = document.getElementById("blogContent").value;
+
+                    if (password === "passwordForBlog") {
+                        const currentDate = new Date().toLocaleDateString();
+                        const blogData = `Title: ${blogTitle}\nDate: ${currentDate}\n\n${blogContent}\n\n`;
+
+                        saveBlogToLocalStorage(blogData);
+                        alert("Blog submitted successfully!");
+
+                    } else {
+                        alert("Incorrect password. Blog submission failed.");
+                    }
+
+                });
+
+                function saveBlogToLocalStorage(blogData) {
+                    const existingBlogs = localStorage.getItem("blogs");
+
+                    if (existingBlogs) {
+                        localStorage.setItem("blogs", existingBlogs + "\n\n" + blogData);
+                    } else {
+                        localStorage.setItem("blogs", blogData);
+                    }
+                }
+            });
+
+        </script>
+
+
 </body>
+
 </html>
