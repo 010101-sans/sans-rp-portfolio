@@ -7,138 +7,17 @@
     <link href="" rel="stylesheet" />
     <title></title>
     <style>
-        html {
-            background-color: orange;
-        }
-
-        body {
-            background-image: linear-gradient(to bottom right, #ff9800, #ffa726);
-        }
-
-        .content {
-            height: 100vh;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .card {
-            perspective: 150rem;
-            height: 20rem;
-            width: 30rem;
-            position: relative;
-        }
-        
-        .card__side {
-            height: 16rem;
-            transition: all 0.8s ease;
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: auto;
-            width: 30rem;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            border-radius: 3px;
-            overflow: hidden;
-            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
-            border-radius: 8px;
-
-        }
-
-        .card__side--front {
-            background-color: #5f45bb;
-            background-image: linear-gradient(to bottom right, #180cac, #d054e4);
-            z-index: 2;
-        }
-
-        .card__side--back {
-            transform: rotateY(180deg);
-            background-color: #1c1c1c;
-            z-index: 1;
-        }
-
-        .card:hover .card__side--front {
-            transform: rotateY(-180deg);
-        }
-
-        .card:hover .card__side--back {
-            transform: rotateY(0deg);
-        }
-
-        .card__cont {
-            height: 15rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .card__cta {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 90%;
-            color: white;
-        }
-
-        .card__cta p {
-            margin-left: 1rem;
-        }
-
-        .card__cta p>.space {
-            margin-left: 2rem;
-        }
-
-        /* Additional styles for the updated design */
-
-        .front-table {
-            border-collapse: collapse;
-            width: 100%;
-            text-align: left;
-            font-size: 1.2rem;
-        }
-        
-        .front-table td {
-            padding: 0.5rem 1rem;
-        }
-
-
-        .qr-code {
-            width: 35%;
-            height: auto;
-            border-radius: 8px;
-            margin-left: 150px;
-            margin-top: 30px;
-        }
     </style>
 </head>
 
 <body>
 
-    <div class="content">
-        <div class="card">
-            <div class="card__side card__side--front">
-                <!-- Front Content -->
-                <div class="card__cont">
-                    <table class="front-table">
-                        <tr><td>Name</td><td>Ravi Majithia</td></tr>
-                        <tr><td>Age</td><td>30</td></tr>
-                        <tr><td>Phone</td><td>+91 9970627776</td></tr>
-                        <tr><td>Email</td><td>contactraviprogramming@gmail.com</td></tr>
-                        <tr><td>Profession</td><td>Teacher | Programmer</td></tr>
-                        <!-- Add more attributes and values here -->
-                    </table>
-                </div>
-            </div>
-            <div class="card__side card__side--back">
-                <!-- Back Content -->
-                <img src="/images/site-qr-code.png" alt="QR Code" class="qr-code">
-            </div>
-        </div>
-    </div>
 
+
+    <script>
+
+    </script>
+
+    
 </body>
-
 </html>

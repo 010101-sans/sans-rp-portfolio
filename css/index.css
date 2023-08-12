@@ -28,6 +28,8 @@ html {
     opacity: 0.25;
     position: fixed; /* Change from "absolute" to "fixed" */
     z-index: -1;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* Reset some default styles for consistency */
@@ -871,7 +873,7 @@ iframe {
   
     .navbar-logo img { width: 80px; height: 80px; border-radius: 50%; filter: invert(1); }
     
-    .website-title { font-size: 1.2rem; margin-left: -60px; padding-top: 10px; }
+    .website-title { font-size: 1.2rem; margin-left: -130px; padding-top: 10px; }
     
     .navbar-links {  margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; }
     
