@@ -800,7 +800,7 @@ iframe {
 .locations-checkbox {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
 }
 .locations-checkbox {
     padding-bottom: 22px;
