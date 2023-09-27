@@ -946,15 +946,17 @@ iframe {
     .footer-middle,
     .footer-right { width: 100%; margin: 0; padding: 10px; align-self: center;}
     
-    .footer-left { flex-direction: row; text-align: center; }
+    .footer-left { flex-direction: row; text-align: center; padding-right: 50px;}
 
     /* .footer-left { flex-wrap: wrap; } */
 
     .social-media p, .get-in-touch { display: none;}
     
+    #email-logo {height: 26px; width: auto;}
     #phone-logo {height: 21px; width: auto;}
+    #whatsapp-logo {height: 26px; width: auto;}
 
-    .social-media img { height: 25px; width: auto; margin-right: -20px;}
+    .social-media img { height: 25px; width: auto; margin-right: -23px; }
 
     .footer-middle { width: 100%; max-width: 500px; overflow: hidden; margin: 10px auto; }
         
